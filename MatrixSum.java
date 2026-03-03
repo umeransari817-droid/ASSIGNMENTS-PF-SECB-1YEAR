@@ -9,17 +9,14 @@ public class MatrixSum {
 
         Scanner input = new Scanner(System.in);
 
-        // Taking matrix size
         System.out.print("Enter number of rows: ");
         int rows = input.nextInt();
 
         System.out.print("Enter number of columns: ");
         int columns = input.nextInt();
 
-        // Creating matrix
         int[][] matrix = new int[rows][columns];
 
-        // Taking matrix elements
         System.out.println("Enter matrix elements:");
 
         for (int i = 0; i < rows; i++) {
@@ -28,8 +25,6 @@ public class MatrixSum {
                 matrix[i][j] = input.nextInt();
             }
         }
-
-        // Printing the matrix
         System.out.println("\nMatrix you entered is:");
 
         for (int i = 0; i < rows; i++) {
